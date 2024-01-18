@@ -10,19 +10,43 @@ public class AppTest
     /**
      * Rigorous Test :-)
      */
-	@Test
-	public void exe_2_Partition_C_min() {
-		
-		String result = App.NumberToChar(50);
-		String expected_result="C";
-		org.junit.Assert.assertEquals(expected_result,result,0.00001);
-	}
-	@Test
-	public void exe_2_Partition_C_min_plus1() {
-		
-		String result = App.NumberToChar(51);
-		String expected_result="C";
-		org.junit.Assert.assertEquals(expected_result,result,0.00001);
-	}
 	
+	
+	//-------------------------------------------------------------
+	//A Partition
+	
+	@Test
+	public void exe_2_Partition_A_min() {
+		
+		String result = App.numberToChar(90);
+		String expected_result="A";
+		org.junit.Assert.assertEquals(expected_result,result);
+	}
+	@Test
+	public void exe_2_Partition_A_min_plus1() {
+		
+		String result = App.numberToChar(91);
+		String expected_result="A";
+		org.junit.Assert.assertEquals(expected_result,result);
+	}
+	@Test
+	public void exe_2_Partition_A_Nominal() {
+	    String result = App.numberToChar(95);
+	    String expected_result = "A";
+
+	    org.junit.Assert.assertEquals(expected_result, result);
+	}
+	@Test
+	public void exe_2_Partition_A_Max_Minus1() {
+		String result = App.numberToChar(99);
+		String expected_result="A";
+		org.junit.Assert.assertEquals(expected_result,result);
+	}
+	@Test
+	public void exe_2_Partition_A_Max() {
+		String result = App.numberToChar(100);
+		String expected_result="A";
+		org.junit.Assert.assertEquals(expected_result,result);
+	}
 }
+ 
